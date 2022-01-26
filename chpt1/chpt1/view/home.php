@@ -5,11 +5,11 @@
         <meta charset="utf-8">
         <title>Facebook Theme Demo</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link href="assets/css/bootstrap.css" rel="stylesheet">
+        <link href="../assets/css/bootstrap.css" rel="stylesheet">
         <!--[if lt IE 9]>
           <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-        <link href="assets/css/facebook.css" rel="stylesheet">
+        <link href="../assets/css/facebook.css" rel="stylesheet">
     </head>
     
     <body>
@@ -18,35 +18,7 @@
 			<div class="box">
 				<div class="row row-offcanvas row-offcanvas-left">
 					
-					<!-- sidebar -->
-					<div class="column col-sm-2 col-xs-1 sidebar-offcanvas" id="sidebar">
-					  
-						<ul class="nav">
-							<li><a href="#" data-toggle="offcanvas" class="visible-xs text-center"><i class="glyphicon glyphicon-chevron-right"></i></a></li>
-						</ul>
-					   
-						<ul class="nav hidden-xs" id="lg-menu">
-							<li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Featured</a></li>
-							<li><a href="#stories"><i class="glyphicon glyphicon-list"></i> Stories</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-paperclip"></i> Saved</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-refresh"></i> Refresh</a></li>
-						</ul>
-						<ul class="list-unstyled hidden-xs" id="sidebar-footer">
-							<li>
-							  <a href="http://usebootstrap.com/theme/facebook"><h3>Bootstrap</h3> <i class="glyphicon glyphicon-heart-empty"></i> Bootply</a>
-							</li>
-						</ul>
-					  
-						<!-- tiny only nav-->
-					  <ul class="nav visible-xs" id="xs-menu">
-							<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
-							<li><a href="#stories" class="text-center"><i class="glyphicon glyphicon-list"></i></a></li>
-							<li><a href="#" class="text-center"><i class="glyphicon glyphicon-paperclip"></i></a></li>
-							<li><a href="#" class="text-center"><i class="glyphicon glyphicon-refresh"></i></a></li>
-						</ul>
-					  
-					</div>
-					<!-- /sidebar -->
+					
 				  
 					<!-- main right col -->
 					<div class="column col-sm-10 col-xs-11" id="main">
@@ -108,13 +80,13 @@
 								 <div class="col-sm-5">
 								   
 									  <div class="panel panel-default">
-										<div class="panel-thumbnail"><img src="assets/img/bg_5.jpg" class="img-responsive"></div>
+										<div class="panel-thumbnail"><img src="../assets/img/bg_5.jpg" class="img-responsive"></div>
 										<div class="panel-body">
 										  <p class="lead">Urbanization</p>
 										  <p>45 Followers, 13 Posts</p>
 										  
 										  <p>
-											<img src="assets/img/uFp_tsTJboUY7kue5XAsGAs28.png" height="28px" width="28px">
+											<img src="../assets/img/uFp_tsTJboUY7kue5XAsGAs28.png" height="28px" width="28px">
 										  </p>
 										</div>
 									  </div>
@@ -144,7 +116,7 @@
 									  <div class="panel panel-default">
 										 <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>More Templates</h4></div>
 										  <div class="panel-body">
-											<img src="assets/img/150x150.gif" class="img-circle pull-right"> <a href="#">Free @Bootply</a>
+											<img src="../assets/img/150x150.gif" class="img-circle pull-right"> <a href="#">Free @Bootply</a>
 											<div class="clearfix"></div>
 											There a load of new free Bootstrap 3
 		 ready templates at Bootply. All of these templates are free and don't 
@@ -174,71 +146,28 @@
 									   
 										<div class="well"> 
 										   <form class="form">
-											<h4>Sign-up</h4>
 											<div class="input-group text-center">
-											<input class="form-control input-lg" placeholder="Enter your email address" type="text">
-											  <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="button">OK</button></span>
+											<h1>WELCOME</h1>
 											</div>
 										  </form>
 										</div>
 							  
-									   <div class="panel panel-default">
-										 <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>Bootply Editor &amp; Code Library</h4></div>
-										  <div class="panel-body">
-											<p><img src="assets/img/150x150.gif" class="img-circle pull-right"> <a href="#">The Bootstrap Playground</a></p>
-											<div class="clearfix"></div>
-											<hr>
-											Design, build, test, and prototype 
-		using Bootstrap in real-time from your Web browser. Bootply combines the
-		 power of hand-coded HTML, CSS and JavaScript with the benefits of 
-		responsive design using Bootstrap. Find and showcase Bootstrap-ready 
-		snippets in the 100% free Bootply.com code repository.
-										  </div>
-									   </div>
+									   
 									
-									   <div class="panel panel-default">
-										 <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>Stackoverflow</h4></div>
-										  <div class="panel-body">
-											<img src="assets/img/150x150.gif" class="img-circle pull-right"> <a href="#">Keyword: Bootstrap</a>
-											<div class="clearfix"></div>
-											<hr>
-											
-											<p>If you're looking for help with Bootstrap code, the <code>twitter-bootstrap</code> tag at <a href="http://stackoverflow.com/questions/tagged/twitter-bootstrap">Stackoverflow</a> is a good place to find answers.</p>
-											
-											<hr>
-											<form>
-											<div class="input-group">
-											  <div class="input-group-btn">
-											  <button class="btn btn-default">+1</button><button class="btn btn-default"><i class="glyphicon glyphicon-share"></i></button>
-											  </div>
-											  <input class="form-control" placeholder="Add a comment.." type="text">
-											</div>
-											</form>
-											
-										  </div>
-									   </div>
+									   
 
-									   <div class="panel panel-default">
-										 <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>Portlet Heading</h4></div>
-										  <div class="panel-body">
-											<ul class="list-group">
-											<li class="list-group-item">Modals</li>
-											<li class="list-group-item">Sliders / Carousel</li>
-											<li class="list-group-item">Thumbnails</li>
-											</ul>
-										  </div>
-									   </div>
+									   
 									
 									   <div class="panel panel-default">
-										<div class="panel-thumbnail"><img src="assets/img/bg_4.jpg" class="img-responsive"></div>
+										<div class="panel-thumbnail"><img src="../assets/img/bg_4.jpg" class="img-responsive"></div>
 										<div class="panel-body">
 										  <p class="lead">Social Good</p>
 										  <p>1,200 Followers, 83 Posts</p>
 										  
 										  <p>
-											<img src="assets/img/photo.jpg" height="28px" width="28px">
-											<img src="assets/img/photo.png" height="28px" width="28px">
-											<img src="assets/img/photo_002.jpg" height="28px" width="28px">
+											<img src="../assets/img/photo.jpg" height="28px" width="28px">
+											<img src="../assets/img/photo.png" height="28px" width="28px">
+											<img src="../assets/img/photo_002.jpg" height="28px" width="28px">
 										  </p>
 										</div>
 									  </div>
@@ -258,7 +187,7 @@
 								  </div>
 								  <div class="col-sm-6">
 									<p>
-									<a href="#" class="pull-right">©Copyright 2013</a>
+									<a href="#" class="pull-right">ï¿½Copyright 2013</a>
 									</p>
 								  </div>
 								</div>
@@ -287,7 +216,7 @@
 		  <div class="modal-dialog">
 		  <div class="modal-content">
 			  <div class="modal-header">
-				  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">ï¿½</button>
 					Update Status
 			  </div>
 			  <div class="modal-body">
