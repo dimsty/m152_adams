@@ -85,11 +85,14 @@
 				  </form>
 			  </div>
 			  <div class="modal-footer">
+			  <form action="controller/upload.php" method="post" enctype="multipart/form-data">
 				  <div>
-				  <button class="btn btn-primary btn-sm" data-dismiss="modal" aria-hidden="true">Post</button>
-					<ul class="pull-left list-inline"><li><a href=""><i class="glyphicon glyphicon-upload"></i></a></li><li><a href=""><i class="glyphicon glyphicon-camera"></i></a></li><li><a href=""><i class="glyphicon glyphicon-map-marker"></i></a></li></ul>
+  <input type="file" name="fileToUpload" id="fileToUpload">
+  <input type="submit" value="Upload Image" name="submit">
+				  
 				  </div>	
 			  </div>
+	</form>
 		  </div>
 		  </div>
 		</div>
