@@ -78,7 +78,10 @@ navigation, pagination, labels, alerts etc..                          </div>
            
         
            
+<?php 
 
+
+?>
            
         
            <div class="panel panel-default">
