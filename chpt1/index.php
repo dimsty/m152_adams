@@ -1,4 +1,5 @@
-<?php 
+<?php
+include "model/db.php"; 
 include "view/header.php";
 ?>
 <div class="padding">
