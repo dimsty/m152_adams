@@ -16,8 +16,8 @@
 			  <div class="modal-footer">
 			  <form action="upload.php" method="post" enctype="multipart/form-data">
 				  <div>
-  <input type="file" name="fileToUpload" id="fileToUpload">
-  <input type="submit" value="Upload Image" name="submit">
+  <input type="file" name="fileToUpload" id="fileToUpload" multiple>
+  <input type="submit" value="Upload Image" name="submit" >
 				  
 				  </div>	
 			  </div>

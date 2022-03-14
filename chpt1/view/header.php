@@ -80,14 +80,14 @@
 			  <div class="modal-body">
 				  <form class="form center-block">
 					<div class="form-group">
-					  <textarea class="form-control input-lg" autofocus="" placeholder="What do you want to share?"></textarea>
+					  <textarea class="form-control input-lg" autofocus="" name="commentaire" placeholder="What do you want to share?"></textarea>
 					</div>
 				  </form>
 			  </div>
 			  <div class="modal-footer">
 			  <form action="controller/upload.php" method="post" enctype="multipart/form-data">
 				  <div>
-  <input type="file" name="fileToUpload" id="fileToUpload">
+  <input type="file" name="fileToUpload[]" id="fileToUpload" multiple>
   <input type="submit" value="Upload Image" name="submit">
 				  
 				  </div>	
