@@ -23,6 +23,7 @@ class Config {
         } catch (PDOException $e) {
             die('Connection Failed : ' . $e->getMessage());
         }
+        
         return $this->conn;
     }
 

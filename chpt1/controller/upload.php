@@ -7,6 +7,7 @@ $alreadyLoop = 0;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 $db = new Database;
 $MAX_SIZE = 1024*1024;
+//$id = GetLastId();
 // Check if image file is a actual image or fake image
 if(isset($_POST["submit"])) {
   $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
@@ -25,9 +26,10 @@ if(isset($_POST["submit"])) {
   } else {
     $name = uniqid();
     echo "<br><pre>";
-    var_dump($commentaire);
+    var_dump($id);
     echo "</pre>";
     $nbFiles = count($_FILES['fileToUpload']['tmp_name']);
+    $db->insertComment($commentaire);
     for($i = 0; $i < $nbFiles; $i++){
       
       $target_file = "../assets/img/".uniqid();
@@ -38,10 +40,9 @@ if(isset($_POST["submit"])) {
       }
       else{
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"][$i], $target_file.".".$imageFileType)) {
-    $db->insertImage($target_file .".". $imageFileType);
-    //$db->insertComment($commentaire);
+    //$db->insertImage($target_file .".". $imageFileType);
     echo "The file ".htmlspecialchars(basename($_FILES["fileToUpload"]["name"][$i]))." has been uploaded.";
-   // echo "The comment ".$commentaire." has been uploaded.";
+    echo "The comment ".$commentaire." has been uploaded.";
     //var_dump(createMediaAndPost($imageFileType, $target_file , date("Y-m-d H:i:s"), $commentaire, $alreadyLoop));
 
     
