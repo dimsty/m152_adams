@@ -20,7 +20,13 @@
 	    $sql = 'INSERT INTO m152.MEDIA (nomMedia) VALUES (:nomMedia)';
 	    $stmt = $this->conn->prepare($sql);
 	    $stmt->execute(['nomMedia' => $nomMedia]);
-	    return true;
+	    return true;}
+
+        public function insertComment($commentaire) {
+            $sql = 'INSERT INTO m152.POST (commentaire) VALUES (:commentaire)';
+            $stmt = $this->conn->prepare($sql);
+            $stmt->execute(['commentaire' => $commentaire]);
+            return true;
 	  }
 
 	  function getCountFromDifferentIdPost()

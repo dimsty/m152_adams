@@ -80,7 +80,7 @@
 			  <div class="modal-body">
 				  <form class="form center-block">
 					<div class="form-group">
-					  <textarea class="form-control input-lg" autofocus="" name="commentaire" placeholder="What do you want to share?"></textarea>
+					  <textarea class="form-control input-lg" autofocus="" name="commentaire" id="commentaire" placeholder="What do you want to share?"></textarea>
 					</div>
 				  </form>
 			  </div>

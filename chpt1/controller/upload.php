@@ -25,7 +25,7 @@ if(isset($_POST["submit"])) {
   } else {
     $name = uniqid();
     echo "<br><pre>";
-    var_dump(count($_FILES['fileToUpload']['name']));
+    var_dump($commentaire);
     echo "</pre>";
     $nbFiles = count($_FILES['fileToUpload']['tmp_name']);
     for($i = 0; $i < $nbFiles; $i++){
@@ -39,8 +39,10 @@ if(isset($_POST["submit"])) {
       else{
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"][$i], $target_file.".".$imageFileType)) {
     $db->insertImage($target_file .".". $imageFileType);
+    //$db->insertComment($commentaire);
     echo "The file ".htmlspecialchars(basename($_FILES["fileToUpload"]["name"][$i]))." has been uploaded.";
-    var_dump(createMediaAndPost($imageFileType, $target_file , date("Y-m-d H:i:s"), $commentaire, $alreadyLoop));
+   // echo "The comment ".$commentaire." has been uploaded.";
+    //var_dump(createMediaAndPost($imageFileType, $target_file , date("Y-m-d H:i:s"), $commentaire, $alreadyLoop));
 
     
     $alreadyLoop = 1;
