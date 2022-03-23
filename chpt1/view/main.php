@@ -8,9 +8,9 @@
 			<div class="col-sm-5">
 
 				<div class="panel panel-default">
-					<div class="panel-thumbnail"><img src="assets/img/bg_5.jpg" class="img-responsive"></div>
+					<div class="panel-thumbnail"><img src="assets/img/623b1265bf2d9.png" class="img-responsive"></div>
 					<div class="panel-body">
-						<p class="lead">Urbanization</p>
+						<p class="lead">Blog Adams</p>
 						<p>45 Followers, 13 Posts</p>
 
 						<p>

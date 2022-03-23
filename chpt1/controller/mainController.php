@@ -1,6 +1,6 @@
 <?php
 require "model/postFunction.php";
-
+//echo "<h1>aaa</h1>";
 
 
 

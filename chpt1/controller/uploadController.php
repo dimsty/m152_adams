@@ -18,7 +18,7 @@ switch ($action) {
 
         for ($i = 0; $i < $nbFileUpload; $i++) {
 
-            $target_dir = "uploaded/"; // specifies the directory where the file is going to be placed
+            $target_dir = "assets/img/"; // specifies the directory where the file is going to be placed
             $target_file = $target_dir . basename($_FILES["filesToUpload"]["name"][$i]);
             $uploadOk = 1;
             $filesToUploadType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
@@ -68,6 +68,41 @@ switch ($action) {
             }        
         }
         break;
+        case 'delete':
+           
+// recup du post
+$idPost = filter_input(INPUT_GET, 'idPost', FILTER_SANITIZE_NUMBER_INT);
+  
+// sup des images
+$medias = Media::getAllMediasByPostId($idPost);
+
+// debut de la transaction
+MonPdo::getInstance()->beginTransaction();
+
+// suppression de tous les fichiers
+foreach ($medias as $media) {
+    if (unlink("./assets/uploads/" . $media->getNomMedia())) {
+        Media::DeleteMedia($media->getIdMedia());
+    } else {
+        // on arrete la transaction
+        MonPdo::getInstance()->rollBack();
+        // retourne un message d'erreur
+        $_SESSION['message'] = [
+            'type' => "danger",
+            'content' => "Un fichier n'a pas pu être supprimé. Merci de ressayer."
+        ];
+        header('Location: index.php');
+    }
+}
+Post::DeletePost($idPost);
+MonPdo::getInstance()->commit();
+$_SESSION['message'] = [
+    'type' => "success",
+    'content' => "Le post a bien été supprimé."
+];
+header('Location: index.php');
+          break;
+
 }
 
 require "view/post.php";
