@@ -40,7 +40,7 @@ if(isset($_POST["submit"])) {
       }
       else{
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"][$i], $target_file.".".$imageFileType)) {
-    //$db->insertImage($target_file .".". $imageFileType);
+    $db->insertImage($target_file .".". $imageFileType);
     echo "The file ".htmlspecialchars(basename($_FILES["fileToUpload"]["name"][$i]))." has been uploaded.";
     echo "The comment ".$commentaire." has been uploaded.";
     //var_dump(createMediaAndPost($imageFileType, $target_file , date("Y-m-d H:i:s"), $commentaire, $alreadyLoop));
